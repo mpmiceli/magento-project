@@ -31,4 +31,10 @@ sudo php bin/magento setup:upgrade
 sudo php bin/magento setup:static-content:deploy -f
 
 Limpiar Cache
-sudo php bin/magento cache:flush 
+sudo php bin/magento cache:flush
+
+Crear backup de la base de datos
+mysqldump -uroot -proot magento > magento-project.sql
+
+Recuperar DB desde backup 
+mysql -uroot -proot magento < magento-project.sql

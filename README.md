@@ -38,3 +38,6 @@ mysqldump -uroot -proot magento > magento-project.sql
 
 Recuperar DB desde backup 
 mysql -uroot -proot magento < magento-project.sql
+
+Como volver a la ultima version del codigo
+git reset --hard HEAD

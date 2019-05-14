@@ -36,8 +36,10 @@ sudo php bin/magento cache:flush
 Crear backup de la base de datos
 mysqldump -uroot -proot magento > magento-project.sql
 
-Recuperar DB desde backup 
-mysql -uroot -proot magento < magento-project.sql
+Recuperar DB desde backup
+1. entrar a mysql, eliminar el schema y crearlo otra vez
+   (drop schema magento; create schema magento)
+2. mysql -uroot -proot magento < magento-project.sql
 
 Como volver a la ultima version del codigo
 git reset --hard HEAD

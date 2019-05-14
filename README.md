@@ -23,3 +23,12 @@ Username:
     root
 Password:
     root
+
+///////////////////////////////////////////////
+
+Instalar tema
+sudo php bin/magento setup:upgrade
+sudo php bin/magento setup:static-content:deploy -f
+
+Limpiar Cache
+sudo php bin/magento cache:flush 
